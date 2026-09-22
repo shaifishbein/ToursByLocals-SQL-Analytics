@@ -1,19 +1,19 @@
 # ToursByLocals – SQL & Power BI Analytics
 
-Database and data analysis project based on a tour-booking platform.
+A database and data analytics project based on a tourism platform, designed to manage and analyze tours, bookings, guides, travellers, reviews and customer search activity.
 
-The project includes the design and implementation of a relational database for managing users, guides, tours, bookings, reviews and customer searches.
+The project combines relational database design, SQL analysis and Power BI visualization.
 
 ## Project Overview
 
-The goal of the project was to design a complete database system and use SQL and Power BI to analyze business activity and support decision-making.
+The database models the core activity of a tourism platform connecting travellers with local guides.
 
-The analysis focuses on areas such as:
-- Tour and guide performance
-- Booking and revenue analysis
+The analysis focuses on:
+- Tour and booking activity
+- Guide performance and revenue
 - Customer search behavior
-- Ratings and reviews
-- Operational KPIs
+- Popular destinations and tour categories
+- Customer reviews and ratings
 
 ## Tools & Technologies
 
@@ -21,21 +21,47 @@ The analysis focuses on areas such as:
 - T-SQL
 - Power BI
 - Relational Database Design
-- ERD
 
 ## SQL Skills Demonstrated
 
-- JOINs and Subqueries
+The project includes:
+
+- Multi-table JOINs
 - GROUP BY and HAVING
-- CTEs
-- Window Functions
+- Subqueries
+- Aggregate functions
+- Window functions (`RANK`, `DENSE_RANK`, `LAG`, `LEAD`)
+- Common Table Expressions (CTEs)
 - Views
-- Functions
-- Stored Procedures
+- User-defined functions
+- Stored procedures
 - Triggers
-- PIVOT / UNPIVOT
-- Error Handling with TRY...CATCH
+- TRY/CATCH error handling
+- Primary and foreign keys
+- Data integrity constraints
 
-## Power BI
+## Power BI Dashboard
 
-Interactive dashboards were created to analyze business performance, including revenue, bookings, participants, popular tours and customer search behavior.
+The Power BI dashboard analyzes customer search activity across countries and tour types.
+
+Key elements include:
+- Total search KPI
+- Searches by country
+- Search share by tour type
+- Interactive country and tour-type filters
+
+![Power BI Search Analysis Dashboard](search_analysis_dashboard.png)
+
+## Repository Structure
+
+```text
+ToursByLocals-SQL-Analytics/
+│
+├── sql/
+│   ├── database_creation.sql
+│   ├── sample_data.sql
+│   ├── analysis_queries.sql
+│   └── advanced_sql.sql
+│
+├── search_analysis_dashboard.png
+└── README.md
